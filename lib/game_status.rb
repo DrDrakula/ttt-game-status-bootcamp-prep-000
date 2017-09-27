@@ -14,6 +14,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [6,4,2]
 ]
+
 board = [" "," "," "," "," "," "," "," "," "]
 
 def won?(board)
@@ -67,11 +68,5 @@ def  winner(board)
   # if WIN_COMBINATIONS[1][0] && WIN_COMBINATIONS[1][1] && WIN_COMBINATIONS[1][2] == "X"
   #   return "X"
   # end
-  WIN_COMBINATIONS.all? do |element|
-    if element == "X"
-      return "X"
-    elsif element =="O"
-      return "O"
-    end
-  end
+  
 end
