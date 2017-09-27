@@ -68,6 +68,11 @@ def  winner(board)
   #   return "X"
   # end
   WIN_COMBINATIONS.all? do |element|
-    element == "X"
-    return "X"
+    if element == "X"
+      return "X"
+    elsif element =="O"
+      return "O"
+    else
+      return false
+    end
 end
