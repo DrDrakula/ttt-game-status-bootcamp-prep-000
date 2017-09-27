@@ -64,7 +64,10 @@ def over?(board)
 end
 #won?(board)
 def  winner(board)
-  if WIN_COMBINATIONS[1][0] && WIN_COMBINATIONS[1][1] && WIN_COMBINATIONS[1][2] == "X"
+  # if WIN_COMBINATIONS[1][0] && WIN_COMBINATIONS[1][1] && WIN_COMBINATIONS[1][2] == "X"
+  #   return "X"
+  # end
+  WIN_COMBINATIONS.all? do |element|
+    element == "X"
     return "X"
-  end
 end
