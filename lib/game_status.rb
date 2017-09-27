@@ -71,7 +71,7 @@ def  winner(board)
   if (board[0] == "X" && board[4] == "X" && board[8] == "X")
     return "X"
   elsif (board[1] == "O" && board[4] == "O" && board[7] == "O")
-    return "Y"
+    return "O"
   else
     return nil
   end
