@@ -68,5 +68,11 @@ def  winner(board)
   # if WIN_COMBINATIONS[1][0] && WIN_COMBINATIONS[1][1] && WIN_COMBINATIONS[1][2] == "X"
   #   return "X"
   # end
-  
+  if (board[0] == "X" && board[4] == "X" && board[8] == "X")
+    return "X"
+  elsif (board[1] == "O" && board[4] == "O" && board[7] == "O")
+    return "Y"
+  else
+    return nil
+  end
 end
